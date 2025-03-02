@@ -1,23 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <title>Cars</title>
-    <body>
-        <h1>ALL ABOUT CARS</h1>
-        <P>Cars are well known as machines used by man to locomote from point A to point B but humans have gotten quite an interest in cars and their shapes and how they operate</P>
-        <p>Some of my favorite cars</p>
-        <ul>
-            <li>Porsche</li>
-            <li>lamborghini</li>
-            <li>Ferrari</li>
-            <li>Rolls royce</li>
-        </ul>
-        <h2>Images of cars</h2
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_paSmGb13hn-b2gbcwhPGQQeHZZoz_Iq-qw&s" alt="A Porsche">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_paSmGb13hn-b2gbcwhPGQQeHZZoz_Iq-qw&s" alt="A Porsche">
-        <h2>Inside parts of a car</h2>   
-        <p>Cars have various parts inside of it that make it able to operate as per required.This parts work hand in hand to ensure that
-            the car is able to move from one point to another. Some of the parts include the engine, the gear box, the steering wheel, the seats, the dashboard, the pedals and many more.
+<head>
+    <title>CARS FOR SALE</title>
+    <link rel="stylesheet" href="css/style.css">
 
-        </p>       
-    </body>
+</head>
+<body>
+    <section> id="header">
+        <div class="container">
+            <div class="header">
+                <h1>FUMBLED CARS</h1>
+                <script src="script.js"></script>
+            </div>
+    </section>
+    <section> id="content">
+        <div class="content">
+            <div class="content-left">
+                <nav
+                    <a href="index.php">Home</a>  <a href="index.php?page=carlist">Car List</a>  <a href="index.php?page=contact">Contact</a>
+                </nav> 
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdm4G2W_Y0N5aiVQUcajc_g7uNpB1SBfHhww&s" alt="FUMBLED CARS COMPANY">
+             </div>
+            <div class="content-right">
+                <?php
+                    if(isset($_GET['page'])){
+                        $page = $_GET['page'];
+                        if($page == 'carlist'){
+                            include('carlist.php');
+                        }else if($page == 'contact'){
+                            include('contact.php');
+                        }
+                    }else{
+                        include('home.php');
+                    }
+                ?>
+            <p>we offer you the best cars here at fumbles cars to make sure you enjoy your rides with the best
+                of luxury you can ask for.
+            </p>
+            </div>
+    </section>
+    <section> id="table"
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Car Name</th>
+                    <th>Car Model</th>
+                    <th>Car Price</th>
+                </tr>
+                <tr>
+                    <td>Toyota</td>
+                    <td>2019</td>
+                    <td>20000</td>
+                </tr>
+                <tr>
+                    <td>Mercedes</td>
+                    <td>2018</td>
+                    <td>30000</td>
+                </tr>
+                <tr>
+                    <td>BMW</td>
+                    <td>2017</td>
+                    <td>40000</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+    
+    <section> id="footer">
+        <div class="footer">
+            <h3>Contact</h3>
+            <p> 07654321 <br>
+                <a href="mailto:
+             h3>Links</h3>
+            <p> <a href="https://www.facebook.com">Facebook</a> <br>
+                <a href="https://www.twitter.com">Twitter</a> <br>
+                <a href="https://www.instagram.com">Instagram</a> <br>
+            </p>
+            <h3>
+                Follow
+            </h3>   
+
+</body>
 </html>
