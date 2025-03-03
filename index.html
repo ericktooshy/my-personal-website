@@ -1,85 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>CARS FOR SALE</title>
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section> id="header">
-        <div class="container">
-            <div class="header">
-                <h1>FUMBLED CARS</h1>
-                <script src="script.js"></script>
-            </div>
-    </section>
-    <section> id="content">
-        <div class="content">
-            <div class="content-left">
-                <nav
-                    <a href="index.php">Home</a>  <a href="index.php?page=carlist">Car List</a>  <a href="index.php?page=contact">Contact</a>
-                </nav> 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdm4G2W_Y0N5aiVQUcajc_g7uNpB1SBfHhww&s" alt="FUMBLED CARS COMPANY">
-             </div>
-            <div class="content-right">
-                <?php
-                    if(isset($_GET['page'])){
-                        $page = $_GET['page'];
-                        if($page == 'carlist'){
-                            include('carlist.php');
-                        }else if($page == 'contact'){
-                            include('contact.php');
-                        }
-                    }else{
-                        include('home.php');
-                    }
-                ?>
-            <p>we offer you the best cars here at fumbles cars to make sure you enjoy your rides with the best
-                of luxury you can ask for.
-            </p>
-            </div>
-    </section>
-    <section> id="table"
-        <div class="table">
-            <table>
-                <tr>
-                    <th>Car Name</th>
-                    <th>Car Model</th>
-                    <th>Car Price</th>
-                </tr>
-                <tr>
-                    <td>Toyota</td>
-                    <td>2019</td>
-                    <td>20000</td>
-                </tr>
-                <tr>
-                    <td>Mercedes</td>
-                    <td>2018</td>
-                    <td>30000</td>
-                </tr>
-                <tr>
-                    <td>BMW</td>
-                    <td>2017</td>
-                    <td>40000</td>
-                </tr>
-            </table>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./list.html">Car List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true"></a>
+        </li>
+      </ul>
+        
+      <div class="header">
+             <h1>FUMBLED CARS</h1>
         </div>
+        
+        <div class="content">
+    <p>Welcome to fumbled cars, where you get good cars at a fair price</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdm4G2W_Y0N5aiVQUcajc_g7uNpB1SBfHhww&s" alt="FUMBLED CARS COMPANY" width="600">
+            </div>
+            
+      
+        
+   
+</html>
 
-    </section>
     
-    <section> id="footer">
-        <div class="footer">
-            <h3>Contact</h3>
-            <p> 07654321 <br>
-                <a href="mailto:
-             h3>Links</h3>
-            <p> <a href="https://www.facebook.com">Facebook</a> <br>
-                <a href="https://www.twitter.com">Twitter</a> <br>
-                <a href="https://www.instagram.com">Instagram</a> <br>
-            </p>
-            <h3>
-                Follow
-            </h3>   
-
 </body>
 </html>

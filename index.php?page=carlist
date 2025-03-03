@@ -1,0 +1,23 @@
+<h2>Available Cars</h2>
+<table border="1">
+    <tr>
+        <th>Car Name</th>
+        <th>Top Speed</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Porsche 911</td>
+        <td>320 km/h</td>
+        <td>$100,000</td>
+    </tr>
+    <tr>
+        <td>Lamborghini Aventador</td>
+        <td>350 km/h</td>
+        <td>$500,000</td>
+    </tr>
+    <tr>
+        <td>Ferrari F8 Tributo</td>
+        <td>340 km/h</td>
+        <td>$280,000</td>
+    </tr>
+</table>
